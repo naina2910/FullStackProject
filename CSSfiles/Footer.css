@@ -196,7 +196,8 @@ h2 {
     padding: 15px;
 }
 
-#email {
+#email,
+#name {
     margin: 0px 5px;
     height: 40px;
     padding: 25px;
