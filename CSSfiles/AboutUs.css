@@ -6,13 +6,17 @@
     box-sizing: border-box;
 }
 
+body {
+    min-width: 390px;
+}
+
 #header {
     position: relative;
     text-align: center;
 }
 
 .layer {
-    background-color: rgba(0, 0, 10, 1);
+    background-color: rgba(0, 0, 20, 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -59,7 +63,7 @@
 
 #section1 {
     margin: 30px auto;
-    width: 50%;
+    width: 60%;
     padding: 20px;
 }
 
@@ -167,5 +171,11 @@
 @media(max-width:994px) {
     #section3 .container .row .col .article {
         height: 365px;
+    }
+}
+
+@media(max-width:430px) {
+    #section3 .container .row .col .article {
+        height: 390px;
     }
 }
