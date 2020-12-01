@@ -19,15 +19,17 @@ hr{
     opacity: 20%;
 }
 footer{
-    width: 100%;
-    background-color: rgb(49, 49, 53);
+    width: 100vw;
     min-width: 277px;
+    background: linear-gradient(rgba(255, 255, 255, 0.151), rgba(255, 255, 255, 0.158)), url("https://media-cdn.tripadvisor.com/media/photo-s/08/4a/79/34/pushkar-resorts.jpg");
+    background-size: cover;    
     max-width: 1811px;
+    font-weight: bolder;
 }
 .up{
     padding: 40px;
     float: left;
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
 }
 .up ul li{
     list-style: none;
@@ -35,7 +37,7 @@ footer{
 }
 .up ul li a{
     text-decoration: none;
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
 }
 .up h3{
     color: white;
@@ -120,13 +122,13 @@ color: white;
 box-shadow: 5px 5px 5px black;
 }
 .bottom {
-    height: 70px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(20, 20, 20);
     color: lightgray;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -173,6 +175,7 @@ box-shadow: 5px 5px 5px black;
     margin: 0px 5px;
     height: 40px;
     padding: 25px;
+    border-radius: 5%;
 }
 .middle button{
     margin: 0px 5px;
