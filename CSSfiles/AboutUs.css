@@ -48,7 +48,6 @@ body {
 
 #header .centered span {
     font-size: 18px;
-    font-weight: bolder;
     color: white;
 }
 
@@ -58,7 +57,7 @@ body {
 }
 
 #header .centered span a:hover {
-    color: black;
+    color: crimson;
 }
 
 #section1 {
