@@ -1,6 +1,6 @@
 var form = document.getElementById("form");
 var username = document.getElementById("username");
-var email = document.getElementById("email");
+var email = document.getElementById("email1");
 var phoneNumber = document.getElementById("phoneNumber");
 var subject = document.getElementById("subject");
 var message = document.getElementById("message");
