@@ -7,7 +7,7 @@
 
 .section {
     margin-top: 20px;
-    height: 100px;
+    height: 20px;
     font-size: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -22,16 +22,18 @@ hr {
 }
 
 footer {
-    width: 100%;
-    background-color: rgb(49, 49, 53);
+    width: 100vw;
     min-width: 277px;
+    background: linear-gradient(rgba(255, 255, 255, 0.144), rgba(255, 255, 255, 0.014)), url("http://cobrakatship.files.wordpress.com/2011/12/img_0394.jpg");
+    background-size: cover;    
     max-width: 1811px;
+    font-weight: bolder;
 }
 
 .up {
     padding: 40px;
     float: left;
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
 }
 
 .up ul li {
@@ -41,7 +43,7 @@ footer {
 
 .up ul li a {
     text-decoration: none;
-    color: rgb(199, 196, 196);
+    color: rgb(255, 255, 255);
 }
 
 .up h3 {
@@ -211,8 +213,8 @@ h2 {
     box-shadow: gray 2px 2px 2px;
     border: 0px;
     font-weight: bold;
-    width: 90px;
-    height: 45px;
+    width: 110px;
+    height: 50px;
     background-color: red;
     color: white;
     border-radius: 25px;
