@@ -1,5 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-content {
+    z-index: 1;
+    position: absolute;
+    top: 265px;
+    left: 385px;
+}
+
+.banner-content a {
+    width: 170px;
+    height: 50px;
+    background-color: rgba(24, 80, 133, 0.911);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    margin: 0px auto;
+}
+
+.banner-content a:hover {
+    background-color: rgba(56, 49, 49, 0.938);
+}
+
+.banner h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-size: 85px;
+    text-align: center;
+    font-style: italic;
+    color: #ff8f00;
+}
+
+.banner h5 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner h1 {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 95px;
+}
+
+.entry {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    z-index: 1;
+    left: 15%;
+    right: 15%;
+    bottom: 0px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0 3px 8px -1px lightgray;
+    -moz-box-shadow: 0 3px 8px -1px lightgray;
+    box-shadow: 0px 3px 8px -1px lightgray;
+}
+
+input {
+    display: block;
+    padding: 10px 15px;
+    color: gray;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    width: 220px;
+    height: 70px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+label {
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#inputAdults,
+#inputChildren {
+    height: 70px;
+    width: 220px;
+    padding: 10px 15px 10px 30px;
+    margin-top: 44px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 18px;
+    color: gray;
+}
+
+.selectNumber {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    left: 22px;
+    top: 70px;
+}
+
+.checkButton {
+    position: relative;
+}
+
+#check {
+    font-size: 18px;
+    background-color: rgb(14, 14, 124);
+    color: white;
+    padding: 10px;
+    font-style: bold;
+    width: 230px;
+    height: 70px;
+    margin-top: 44px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+}
+
+.checkButton i {
+    position: absolute;
+    color: skyblue;
+}
+
+#check:hover {
+    background-color: rgb(25, 30, 56);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: rgba(182, 183, 184, 0.37);
+}
+
+.about {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 95px 65px;
+    position: relative;
+}
+
+#about-img-1 {
+    width: 450px;
+    height: 720px;
+    margin: 20px 30px 20px 60px;
+}
+
+.about_flex-box-1,
+.about_flex-box-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_flex-box-2 {
+    padding: 95px 25px 25px;
+}
+
+#about-img-2,
+#about-img-3 {
+    width: 450px;
+    height: 340px;
+    margin: 20px;
+}
+
+.about .fa-snowflake-o {
+    font-size: 50px;
+    color: skyblue;
+    position: absolute;
+    top: 115px;
+    left: 76%;
+}
+
+.about_flex-box-2 h4 {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.about_flex-box-2 h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about_flex-box-2 p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin: 35px auto;
+}
+
+.about_flex-box-2 a {
+    width: 200px;
+    height: 65px;
+    color: white;
+    background-color: rgba(14, 60, 104, 0.911);
+    text-align: center;
+    margin: 10px auto;
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about_flex-box-2 a:hover {
+    background-color: rgba(56, 49, 49, 0.938);
+}
+
+.features {
+    padding: 95px 35px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(240, 236, 236, 0.822);
+}
+
+.features .fa-snowflake-o {
+    position: absolute;
+    color: skyblue;
+    font-size: 50px;
+    left: 50%;
+}
+
+.features-align-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px 15px 25px;
+}
+
+.features h4 {
+    margin-top: 25px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.features h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto;
+}
+
+.features .container .col-3 {
+    height: 550px;
+    background-color: white;
+    margin: 0px 45px;
+}
+
+.features .container .col-3:hover {
+    background-color: rgba(0, 27, 77, 0.89);
+    box-shadow: 2px 2px 13px 10px gray;
+}
+
+.features .container .col-3:hover,
+.features .container h2:hover,
+.features .container h4:hover {
+    color: white;
+}
+
+.features-icon-1 {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: skyblue;
+    margin: 45px auto;
+    position: relative;
+}
+
+.features-icon-2 {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: pink;
+    margin: 45px auto;
+    position: relative;
+}
+
+.features-icon-3 {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: rgba(224, 133, 163, 0.897);
+    margin: 45px auto;
+    position: relative;
+}
+
+.fa-cutlery {
+    color: rgba(9, 130, 201, 0.808);
+    font-size: 70px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fa-bed {
+    color: rgba(235, 134, 151, 0.877);
+    font-size: 70px;
+    position: absolute;
+    top: 50px;
+    left: 46px;
+}
+
+.fa-key {
+    color: rgba(187, 82, 82, 0.822);
+    font-size: 70px;
+    position: absolute;
+    top: 50px;
+    left: 46px;
+}
+
+.features .container h2 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.features .container h4 {
+    margin: 35px auto;
+    text-align: center;
 }
