@@ -90,7 +90,7 @@ body {
     display: block;
     width: 100%;
     margin: auto;
-    height: 450px;
+    height: 350px;
 }
 
 .article .content {
@@ -156,12 +156,6 @@ body {
 
 .checked {
     color: orange;
-}
-
-@media(max-width:1090px) {
-    .article img {
-        height: 400px;
-    }
 }
 
 @media(max-width:730px) {
