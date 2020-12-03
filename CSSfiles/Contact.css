@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    min-width: 390px;
+}
+
 .container1 {
     position: relative;
     text-align: center;
@@ -93,6 +97,7 @@
 .right h1 {
     font-family: 'Texturina', serif;
 }
+
 
 /*i {
     font-size: 073em;
