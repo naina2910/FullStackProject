@@ -33,7 +33,7 @@ function checkInput() {
     const phoneNumberValue = phoneNumber.value.trim();
     if (phoneNumberValue === '') {
         showError(phoneNumber, "Phone Number can not be blank");
-    } else if (!isPhoneValid(phoneNumber)) {
+    } else if (!isPhoneValid(phoneNumberValue)) {
         showError(phoneNumber, "Phone Number is not valid");
     } else {
         showSuccess(phoneNumber);
@@ -80,5 +80,6 @@ function isUsernameValid(username) {
 }
 
 function isPhoneValid(phoneNumber) {
-    return /^([0-9()-]+)$/.test(phoneNumber);
+    var no = Number(phoneNumber);
+    return /^[768]\d{9}$/.test(no);
 }
