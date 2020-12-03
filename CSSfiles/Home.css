@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -118,7 +119,7 @@ label {
     position: relative;
 }
 
-i {
+.entry i {
     position: absolute;
     left: 22px;
     top: 70px;
@@ -161,7 +162,17 @@ i {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
-    padding: 95px 65px;
+    padding: 45px 0px;
+}
+
+.about-left-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-right-box {
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
@@ -178,7 +189,7 @@ i {
 }
 
 .about_flex-box-2 {
-    padding: 95px 25px 25px;
+    padding: 75px 0px 25px;
 }
 
 #about-img-2,
@@ -188,12 +199,12 @@ i {
     margin: 20px;
 }
 
-.about .fa-snowflake-o {
+.about-right-box .fa-snowflake-o {
     font-size: 50px;
     color: skyblue;
     position: absolute;
-    top: 115px;
-    left: 76%;
+    top: 10px;
+    left: 48%;
 }
 
 .about_flex-box-2 h4 {
@@ -212,7 +223,7 @@ i {
 .about_flex-box-2 p {
     text-align: center;
     font-size: 25px;
-    padding: 10px;
+    padding: 10px 0px;
     margin: 35px auto;
 }
 
@@ -234,7 +245,7 @@ i {
 }
 
 .features {
-    padding: 95px 35px;
+    padding: 25px 0px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -245,7 +256,8 @@ i {
     position: absolute;
     color: skyblue;
     font-size: 50px;
-    left: 50%;
+    left: 49%;
+    top: 8px;
 }
 
 .features-align-box {
@@ -253,11 +265,11 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 55px 15px 25px;
+    padding: 45px 0px;
 }
 
 .features h4 {
-    margin-top: 25px auto;
+    margin: 10px auto;
     text-align: center;
     font-weight: bold;
 }
@@ -280,10 +292,15 @@ i {
     box-shadow: 2px 2px 13px 10px gray;
 }
 
-.features .container .col-3:hover,
-.features .container h2:hover,
-.features .container h4:hover {
+.col-3:hover>h2,
+.col-3:hover>h4,
+.col-3:hover>a>h4 {
     color: white;
+}
+
+.features .col-3 a {
+    text-decoration: none;
+    color: black;
 }
 
 .features-icon-1 {
@@ -347,4 +364,299 @@ i {
 .features .container h4 {
     margin: 35px auto;
     text-align: center;
+}
+
+.rooms {
+    padding: 85px 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(220, 232, 250);
+}
+
+.rooms .fa-snowflake-o {
+    position: absolute;
+    color: skyblue;
+    font-size: 50px;
+    left: 49%;
+    top: 25px;
+}
+
+.rooms h4 {
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rooms h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto;
+}
+
+.rooms a {
+    text-decoration: none;
+    color: black;
+}
+
+.rooms a:hover {
+    color: rgb(113, 196, 230);
+}
+
+.rooms a h4 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.reasons {
+    position: relative;
+}
+
+.reasons-align-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px 0px;
+    margin-top: 60px;
+}
+
+.reasons .fa-snowflake-o {
+    position: absolute;
+    color: skyblue;
+    font-size: 50px;
+    left: 49%;
+    top: -10px;
+}
+
+.reasons h4 {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reasons h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto;
+}
+
+.row-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row-item p {
+    color: grey;
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.row-item .col-12 {
+    margin: 25px 0px;
+}
+
+.row-item-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-img {
+    border-radius: 50%;
+    width: 240px;
+    height: 140px;
+    background-color: skyblue;
+    position: relative;
+    margin: 15px;
+}
+
+.row-img i {
+    position: absolute;
+    left: 35%;
+    top: 34%;
+    font-size: 53px;
+    color: rgb(39, 132, 168);
+}
+
+.reasons .card {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 50px;
+}
+
+.reasons .card .card-img {
+    width: 40%;
+    text-align: right;
+}
+
+.reasons .card .card-img img {
+    height: 50px;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.reasons .card .card-body {
+    width: 60%;
+}
+
+.reasons .card .card-body p {
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.services {
+    background-color: rgba(255, 224, 229, 0.534);
+    position: relative;
+}
+
+.services .fa-snowflake-o {
+    position: absolute;
+    left: 49%;
+    top: 10px;
+    color: skyblue;
+    font-size: 50px;
+}
+
+.services-align-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.services h4 {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto 0px;
+}
+
+.services-container {
+    margin: 0px 15px;
+}
+
+.services .col-3 h1 {
+    font-size: 40px;
+}
+
+.services .col-3 p {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    margin: 5px auto;
+}
+
+.customers {
+    background-color: rgba(192, 225, 238, 0.322);
+    position: relative;
+}
+
+.customers-align-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.customers .fa-snowflake-o {
+    position: absolute;
+    left: 49%;
+    top: 14px;
+    color: skyblue;
+    font-size: 50px;
+}
+
+.customers h4 {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.customers h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto 0px;
+}
+
+.customers .card {
+    margin: 15px auto;
+    width: 75%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.customers .card .rating {
+    position: absolute;
+    bottom: 8px;
+    left: 40%;
+    font-size: 20px;
+}
+
+.customers .card-body p {
+    font-size: 18px;
+    color: grey;
+    margin: 50px auto;
+}
+
+.customers .row-inner .col-4 img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+}
+
+.row-inner .info {
+    display: flex;
+    flex-direction: row;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    position: relative;
+    background-color: rgb(204, 221, 247);
+}
+
+.greetings h2 {
+    color: black;
+    line-height: 200px;
+    margin: 10px 55px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.greetings img {
+    position: absolute;
+}
+
+.greetings .img1 {
+    right: 30%;
+    bottom: 0px;
+}
+
+.greetings .img2 {
+    right: 15%;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.greetings .img3 {
+    right: 7%;
+    bottom: 0px;
 }
