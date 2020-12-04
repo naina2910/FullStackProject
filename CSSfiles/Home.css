@@ -258,6 +258,10 @@ input[type="date"]:valid:before {
     margin-left: 65px;
 }
 
+#about #row-1 .col-12 {
+    margin: 10px auto;
+}
+
 #about #row-2 {
     margin: 10px 0px;
 }
