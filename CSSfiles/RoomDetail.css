@@ -541,25 +541,6 @@ table {
     margin: 20px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: none;
-}
-
-.carousel-control-next-icon:after {
-    content: '\f061';
-    font-family: "FontAwesome";
-    font-size: 20px;
-    color: crimson;
-}
-
-.carousel-control-prev-icon:after {
-    content: '\f060';
-    font-family: "FontAwesome";
-    font-size: 20px;
-    color: crimson;
-}
-
 
 /* rooms style */
 
