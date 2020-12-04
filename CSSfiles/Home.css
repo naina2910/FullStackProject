@@ -215,9 +215,9 @@ input[type="date"]:valid:before {
 }
 
 .entry .selectNumber i {
-    color: skyblue;
-    padding-top: 14px;
-    padding-left: 5px;
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
 }
 
 #check {
@@ -248,10 +248,14 @@ input[type="date"]:valid:before {
     width: 100%;
 }
 
-#about #row-1 .col-4 img {
+#about #row-1 #col-4 img {
     margin: 10px 0px 10px 10px;
     width: 100%;
     height: 700px;
+}
+
+#about #row-1 .col-lg-6 {
+    margin-left: 65px;
 }
 
 #about #row-2 {
@@ -312,7 +316,7 @@ input[type="date"]:valid:before {
     height: 65px;
 }
 
-#about #side-box a:hover {
+#about #row-1 #side-box #row-3 a:hover {
     background-color: rgba(56, 49, 49, 0.938);
 }
 
@@ -777,7 +781,8 @@ input[type="date"]:valid:before {
     }
 }
 
-@media(max-width:1399px) {
+
+/* @media(max-width:1399px) {
     #about #row-1 .col-4,
     #about #row-1 .col-3 {
         display: none;
@@ -785,7 +790,7 @@ input[type="date"]:valid:before {
     #about #side-box {
         margin: 10px auto;
     }
-}
+} */
 
 @media(max-width:2100px) {
     .reasons .row-item-content .row-img {
