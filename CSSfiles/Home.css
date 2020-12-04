@@ -16,11 +16,95 @@ body {
     position: relative;
 }
 
+.banner .part2 {
+    display: none;
+}
+
+.section2 .right .part2 {
+    width: 100%;
+    border: 2px solid #85B5CC;
+    margin-top: 30px;
+}
+
+.section2 .right .part2 .form {
+    padding: 20px;
+}
+
+.section2 .right .part2 .form .input {
+    display: flex;
+    border: 2px solid #85B5CC;
+    margin: 25px auto;
+}
+
+.section2 .right .part2 .form .input input,
+.section2 .right .part2 .form .input select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    display: inline;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.section2 .right .part2 .form .input i {
+    background-color: white;
+    color: #85B5CC;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) ":" !important;
+    color: black;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+.section2 .right .part2 .form .date i {
+    padding-top: 15px;
+}
+
+.section2 .right .part2 .form button {
+    outline: none;
+    padding: none;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.section2 .right .part2 .form button a {
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: #054581;
+    text-decoration: none;
+    text-align: center;
+}
+
+.section2 .right .part2 .form button a i {
+    padding-right: 5px;
+}
+
+.section2 .right .part2 .form button a:hover {
+    background-color: #051422;
+}
+
+#carouselExampleFade {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
 .banner-content {
     z-index: 1;
     position: absolute;
-    top: 265px;
-    left: 385px;
+    top: 18%;
+    left: 18%;
 }
 
 .banner-content a {
@@ -66,14 +150,9 @@ body {
 }
 
 .entry {
-    position: absolute;
-    bottom: 0px;
     background-color: white;
-    z-index: 1;
-    left: 15%;
-    right: 15%;
-    bottom: 0px;
     padding: 15px;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -90,7 +169,7 @@ input {
     border-radius: 5px;
     width: 220px;
     height: 70px;
-    margin: 10px;
+    margin: 10px 5px;
     font-size: 18px;
 }
 
@@ -107,8 +186,8 @@ label {
     width: 220px;
     padding: 10px 15px 10px 30px;
     margin-top: 44px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: 2px solid lightgray;
     border-radius: 5px;
     font-size: 18px;
@@ -158,28 +237,53 @@ label {
     color: rgba(182, 183, 184, 0.37);
 }
 
-.about {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    padding: 45px 0px;
+#about {
+    margin: 20px 0px;
+    width: 100%;
 }
 
-.about-left-box {
+#about #row-1 .col-4 img {
+    margin: 10px 0px 10px 10px;
+    width: 100%;
+    height: 700px;
+}
+
+#about #row-2 {
+    margin: 10px 0px;
+}
+
+#about-img-2 {
+    margin-bottom: 20px;
+}
+
+#about-img-2,
+#about-img-3 {
+    height: 340px;
+}
+
+#about #row-1 .col-5 #row-3 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+/* .about-left-box {
     display: flex;
     flex-direction: row;
+    margin: 40px 0px;
 }
 
 .about-right-box {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 40px 0px;
 }
 
 #about-img-1 {
     width: 450px;
     height: 720px;
-    margin: 20px 30px 20px 60px;
+    margin: 20px;
 }
 
 .about_flex-box-1,
@@ -192,12 +296,7 @@ label {
     padding: 75px 0px 25px;
 }
 
-#about-img-2,
-#about-img-3 {
-    width: 450px;
-    height: 340px;
-    margin: 20px;
-}
+
 
 .about-right-box .fa-snowflake-o {
     font-size: 50px;
@@ -224,7 +323,7 @@ label {
     text-align: center;
     font-size: 25px;
     padding: 10px 0px;
-    margin: 35px auto;
+    margin: 35px 10px;
 }
 
 .about_flex-box-2 a {
@@ -242,7 +341,7 @@ label {
 
 .about_flex-box-2 a:hover {
     background-color: rgba(56, 49, 49, 0.938);
-}
+} */
 
 .features {
     padding: 25px 0px;
@@ -281,24 +380,24 @@ label {
     margin: 25px auto;
 }
 
-.features .container .col-3 {
+.features .container #col-3 {
     height: 550px;
     background-color: white;
-    margin: 0px 45px;
+    margin: 20px 40px;
 }
 
-.features .container .col-3:hover {
+.features .container #col-3:hover {
     background-color: rgba(0, 27, 77, 0.89);
     box-shadow: 2px 2px 13px 10px gray;
 }
 
-.col-3:hover>h2,
-.col-3:hover>h4,
-.col-3:hover>a>h4 {
+#col-3:hover>h2,
+#col-3:hover>h4,
+#col-3:hover>a>h4 {
     color: white;
 }
 
-.features .col-3 a {
+.features #col-3 a {
     text-decoration: none;
     color: black;
 }
@@ -467,7 +566,7 @@ label {
 
 .row-img {
     border-radius: 50%;
-    width: 240px;
+    width: 220px;
     height: 140px;
     background-color: skyblue;
     position: relative;
@@ -479,6 +578,8 @@ label {
     left: 35%;
     top: 34%;
     font-size: 53px;
+    /* line-height: 140px;
+    margin: 0px 30px; */
     color: rgb(39, 132, 168);
 }
 
@@ -546,15 +647,15 @@ label {
     margin: 0px 15px;
 }
 
-.services .col-3 h1 {
+.services #col-3 h1 {
     font-size: 40px;
 }
 
-.services .col-3 p {
+.services #col-3 p {
     text-align: center;
     font-size: 18px;
     color: gray;
-    margin: 5px auto;
+    margin: 20px auto;
 }
 
 .customers {
@@ -633,10 +734,15 @@ label {
     background-color: rgb(204, 221, 247);
 }
 
+.greetings-heading {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 55px;
+    justify-content: center;
+}
+
 .greetings h2 {
     color: black;
-    line-height: 200px;
-    margin: 10px 55px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 }
@@ -646,17 +752,63 @@ label {
 }
 
 .greetings .img1 {
-    right: 30%;
+    right: 28%;
     bottom: 0px;
 }
 
 .greetings .img2 {
-    right: 15%;
+    right: 13%;
     bottom: 0px;
     z-index: 1;
 }
 
 .greetings .img3 {
-    right: 7%;
+    right: 5%;
     bottom: 0px;
+}
+
+@media(max-width:1199px) {
+    .entry {
+        display: none;
+    }
+    .banner .part2 {
+        display: block;
+    }
+    .greetings {
+        flex-direction: column;
+        height: 380px;
+    }
+    .greetings-heading {
+        margin: 45px auto;
+    }
+    .greetings .img1 {
+        right: 56%;
+    }
+    .greetings .img2 {
+        right: 32%;
+    }
+    .greetings .img3 {
+        right: 20%;
+    }
+}
+
+@media(max-width:2200px) {
+    .reasons .row-item-content .row-img {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .reasons #reasons-image {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .reasons .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
