@@ -765,7 +765,7 @@ input[type="date"]:valid:before {
         height: 380px;
     }
     .greetings-heading {
-        margin: 45px auto;
+        text-align: center;
     }
     .greetings .img1 {
         right: 56%;
@@ -794,6 +794,9 @@ input[type="date"]:valid:before {
 @media(max-width:991px) {
     .reasons #reasons-image {
         display: none;
+    }
+    .greetings-heading {
+        text-align: center;
     }
     .greetings .img1 {
         right: 55%;
@@ -828,6 +831,9 @@ input[type="date"]:valid:before {
     .greetings .img3 {
         display: none;
     }
+    .greetings-heading {
+        text-align: center;
+    }
 }
 
 @media(max-width:699px) and (min-width:600px) {
@@ -839,6 +845,9 @@ input[type="date"]:valid:before {
     }
     .greetings .img3 {
         display: none;
+    }
+    .greetings-heading {
+        text-align: center;
     }
 }
 
@@ -852,6 +861,9 @@ input[type="date"]:valid:before {
     .greetings .img3 {
         display: none;
     }
+    .greetings-heading {
+        text-align: center;
+    }
 }
 
 @media(max-width:499px) {
@@ -863,5 +875,9 @@ input[type="date"]:valid:before {
     }
     .greetings .img3 {
         display: none;
+    }
+    .greetings-heading {
+        margin: 15px auto;
+        text-align: center;
     }
 }
