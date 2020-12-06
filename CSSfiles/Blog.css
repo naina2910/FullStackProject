@@ -69,9 +69,30 @@
 .container-fluid .content .top-img,
 .container-fluid .content .center-img {
     width: 50%;
-    height: 600px;
+    height: 650px;
     margin: 30px auto;
     display: block;
+}
+
+@media(max-width:991px) {
+    .container-fluid .container-fluid .content img {
+        height: 400px;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width:767px) {
+    .container-fluid .container-fluid .content img {
+        height: 300px;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width:575px) {
+    .container-fluid .container-fluid .content img {
+        height: 220px;
+        margin: 30px auto;
+    }
 }
 
 .container-fluid .content .highlight-content {
