@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Double Room</title>
+    <link rel="icon" href="../../images/logo.svg" type="image/icon type">
 
     <!-- Bootstrap CDN -->
 
@@ -50,7 +51,7 @@
                     <a class="nav-link" href="../AboutUs.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Facilities
               </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,11 +76,11 @@
                Blog
               </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Blog-1.html">Host a Family Party</a>
+                        <a class="dropdown-item" href="../Blog-1.html">Host a Family Party</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="Blog-2.html">Your Wedding at Hotel WP</a>
+                        <a class="dropdown-item" href="../Blog-2.html">Your Wedding at Hotel WP</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="Blog-3.html">Ideas for a Party</a>
+                        <a class="dropdown-item" href="../Blog-3.html">Ideas for a Party</a>
                     </div>
                 </li>
             </ul>
@@ -215,19 +216,19 @@
                     <div class="form">
                         <div class="input date">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <input type="date" id="arrival" placeholder="ARRIVAL DATE" onfocus="(this.type='date')">
+                            <input type="date" id="arrival" required placeholder="ARRIVAL DATE" onfocus="(this.type='date')">
                         </div>
 
 
                         <div class="input date">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <input type="date" id="departure" placeholder="DEPARTURE DATE" onfocus="(this.type='date')">
+                            <input type="date" id="departure" required placeholder="DEPARTURE DATE" onfocus="(this.type='date')">
                         </div>
 
 
                         <div class="input">
                             <i class="fa fa-user" aria-hidden="true"></i>
-                            <select id="adults">
+                            <select id="adults" required>
                                 <option selected>Adults</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -241,7 +242,7 @@
 
                         <div class="input">
                             <i class="fa fa-child" aria-hidden="true"></i>
-                            <select id="children">
+                            <select id="children" required>
                                 <option selected>Children</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -251,7 +252,7 @@
                             </select>
                         </div>
 
-                        <button><a href="#"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>CHECK AVAILABILITY</a></button>
+                        <button><a><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>CHECK AVAILABILITY</a></button>
                     </div>
                 </div>
             </div>
@@ -354,7 +355,7 @@
                             <form>
                                 <div class="reviewinput">
                                     <label for="message">Your Review:</label>
-                                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
+                                    <textarea name="message" id="message" cols="50" rows="5" required></textarea>
                                 </div>
                                 <div class="reviewinput">
                                     <label for="name1">Name:</label>

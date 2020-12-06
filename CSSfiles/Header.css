@@ -16,9 +16,10 @@
     font-size: 30px;
 }
 
-.navbar-nav {
+
+/* .navbar-nav {
     padding: 10px;
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Open Sans', sans-serif;
@@ -43,7 +44,7 @@
 }
 
 .navbar-light .navbar-nav .nav-item {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .navbar-light .navbar-nav .dropdown .dropdown-menu .dropdown-item {
