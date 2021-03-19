@@ -81,5 +81,5 @@ function isUsernameValid(username) {
 
 function isPhoneValid(phoneNumber) {
     var no = Number(phoneNumber);
-    return /^[768]\d{9}$/.test(no);
+    return /^[7689]\d{9}$/.test(no);
 }
